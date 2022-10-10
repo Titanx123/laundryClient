@@ -1,0 +1,48 @@
+.footer-container {
+    top: 1123px;
+    left: -17px;
+    width: 1457px;
+    height: 50px;
+/* UI Properties */
+    background: #182838 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+    position: absolute;
+}
+.footer-year {
+    top: 17px;
+    left: 670px;
+    width: 30px;
+    height: 16px;
+/* UI Properties */
+    text-align: center;
+    font: normal normal normal 12px/24px Avenir;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+}
+.footer-symbol {
+    top: 18.5px;
+    left: 702px;
+    width: 14px;
+    height: 14px;
+/* UI Properties */
+    border: 1px solid #FEFFFF;
+    opacity: 1;
+    position: absolute;
+    border-style: none;
+    color: white;
+}
+.footer-laundry {
+    top: 17px;
+    left: 725px;
+    width: 44px;
+    height: 16px;
+    text-align: center;
+    font: normal normal normal 12px/24px Avenir;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    opacity: 1;
+    position: absolute;
+}
