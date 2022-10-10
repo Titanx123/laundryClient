@@ -30,7 +30,7 @@ const Isuserloggedin = ({children})=> {
     //""
     return (
         <>
-        {token.length ? <Navigate to="/order/history"/>:children}
+        {token ? <Navigate to="/order/history"/>:children}
         </>
     )
 }
