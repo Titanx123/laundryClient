@@ -21,7 +21,7 @@ const Pastorders =()=>{
         // const [sort,setsort]=useState(false)
         const [sortedArr,setsorted]=useState(orders)
         const [id,setid]=useState("")
-        const [sortType, setSortType] = useState('price');
+        // const [sortType, setSortType] = useState('price');
 
 
         const gotocreateorder = ()=>{
@@ -50,27 +50,29 @@ const Pastorders =()=>{
             })
         },[]);
 
-        useEffect(()=>{
-            const handleSort=(type)=>{
-                const types={
-                    orderid:"orderid",
-                    date:"datetime",
-                    subtotal:"subtotal"
-                }
-                const sortProperty=types[type]
-                const sorted=[...orders].sort((a,b)=>a[sortProperty] - b[sortProperty])
-                setsorted(sorted)
-                //console.log(sorted)
-            }
-            handleSort(sortType)
-        },[sortType])
+        // useEffect(()=>{
+        //     const handleSort=(type)=>{
+        //         const types={
+        //             orderid:"orderid",
+        //             date:"datetime",
+        //             subtotal:"subtotal"
+        //         }
+        //         const sortProperty=types[type]
+        //         const sorted=[...orders].sort((a,b)=>a[sortProperty] - b[sortProperty])
+        //         setsorted(sorted)
+        //         //console.log(sorted)
+        //     }
+        //     handleSort(sortType)
+        // },[sortType])
         return( 
         <>
         
         <Header/>
         <NavBar/>
         <div className='sort_opt'>
-            <select className='opt' onChange={(e) => setSortType(e.target.value)}> 
+                    <select className='opt'
+                        // onChange={(e) => setSortType(e.target.value)}
+                    > 
                 <option value="orderid">orderid</option>
                 <option value="datetime">date</option>
                 <option value="subtotal">price</option>
